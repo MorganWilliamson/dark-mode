@@ -10,7 +10,6 @@ export const useLocalStorage = (key, initialValue) => {
         return item ? JSON.parse(item) : initialValue;
     });
 
-    
     //The below function sets value to whatever is stored locally, based on the key that it's given.
     //This also updates the state of storedValue with the appropriate value. 
     const setValue = value => {
